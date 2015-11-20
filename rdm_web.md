@@ -1,16 +1,23 @@
+## Eawag Research Data Management Project
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
-
-# Eawag Research Data Management Project
-
-## Summary
+<img src="./eawag_rdm.png" width="100%" />
 
 <div id="accordion">
 
-## Objectives
+### Summary
+
+<div>
+A central research data repository is being established at Eawag. It
+will provide intermediate- and long-term storage for datasets of all
+research groups. The software will be tailored to the specific needs
+of the researchers at the work group level and is being developed in
+close interaction with the users. Besides the repository itself, the
+project will also provide guidelines, training and ancillary tools and
+services to support researchrs with their data-management and
+-handling needs.
+</div>
+
+### Objectives
 
 <div>
 
@@ -25,7 +32,7 @@
 
 </div>
 
-## Guiding Principles
+### Guiding Principles
 
 <div>
 + **For the scientists, data-management should be a well-defined, simple and quickly executed routine task.**
@@ -35,13 +42,12 @@
 + Strive for collaboration with related inititives within the ETH domain and at other research institutions.
 </div>
 
-## Deliverables 
+### Deliverables 
 
 <div>
+<p class="nav">[Eawag Research Data Platform](#eawag-research-data-platform)  [Metadata Schemes](#metadata-schemes) [RDM Guidelines](#research-data-management-guidelines) [Support Activities](#support-activities)</p>
 
-[[Eawag Research Data Platform]](#eawag-research-data-platform)   [[Metadata Schemes]](#metadata-schemes) [[RDM Guidelines]](#research-data-management-guidelines) [[Support Activities]](#support-activities)
-
-### Eawag Research Data Platform (ERDP) [&#8593;](#deliverables)
+#### Eawag Research Data Platform (ERDP) [&#8593;](#deliverables)
 
 The project will establish an institution-wide central research data
 repository. The repository will be accessible to all Eawag research
@@ -71,18 +77,20 @@ repositories and for registering a Digital Object Identifier (DOI).
 
 [A link to more technical information to be provided later on GitHub]
 
-### Metadata Schemes [&#8593;](#deliverables)
+#### Metadata Schemes [&#8593;](#deliverables)
 
 Development of a metadata structure that is 
 
-+ compatible with international standards, such as the [Dublin Core](https://de.wikipedia.org/wiki/Dublin_Core) conventions,
++ compatible, to the deggree possible, with international standards,
+  such as the [Dublin Core](https://de.wikipedia.org/wiki/Dublin_Core), [RDF](http://www.w3.org/standards/techs/rdf)
+  and [DCAT](http://www.w3.org/TR/vocab-dcat/).
 + covers the requirements for all data stored at Eawag,
 + will be extended as needed, and
 + is compliant to the extent possible with common requirements of
   external services, such as [dataCite](https://www.datacite.org/),
   [PANGAEA](http://www.pangaea.de/), or [figshare](http://figshare.com).
 
-### Research Data Management Guidelines [&#8593;](#deliverables)
+#### Research Data Management Guidelines [&#8593;](#deliverables)
 
 The repository roll-out will be accompanied by the development of
 data-management guidelines. These guidelines will be developed with
@@ -92,7 +100,7 @@ presumably specifies the precise meta-data requirements, the types of
 datasets that should be submitted to the repository, rules for
 write-access to the repository and similar topics.
 
-### Support activities [&#8593;](#deliverables)
+#### Support activities [&#8593;](#deliverables)
 
 Research groups will receive support to streamline their data
 submission procedures. This includes case-by-case analysis of current
@@ -102,7 +110,7 @@ software to automate such tasks, if applicable, and the cooperative
 development of specific meta-data schemes.
 </div>
 
-## Background
+### Background
 
 <div>
 The
@@ -133,7 +141,7 @@ with the establishment of data-management procedures that can be
 followed "blindly". 
 </div>
 
-## People
+### People
 
 <div>
 Project lead: [Harald von Waldow](http://www.eawag.ch/de/ueberuns/portraet/organisation/mitarbeitende/profile/harald-von-waldow/)   
@@ -145,29 +153,22 @@ Steering Group:  [Jochen Bihn](http://www.eawag.ch/de/ueberuns/portraet/organisa
  [Rosi Siber](http://www.eawag.ch/de/ueberuns/portraet/organisation/mitarbeitende/profile/rosi-siber/)
  </div>
  
-## Co-operation with other projects
+### Co-operation with other projects
 
 <div>
 We aim to connect with related initiatives within the ETH-domain and Swiss universities. Currently we are in contact with WSL.
 With regard to the software, we are part of the global CKAN developer community.
 </div>
 
-## Time-line
+### Time-line
+
+-------------      --------------
+**Jan. 2015?**     Start of Concept Phase.
+**Sep. 2015**      Basic CKAN customizations begins.
+**Dec. 2015**      Customization based on "real data" begins.
+**Mar. 2016**      Start of pilot phase.
+**Jan. 2017**      Operational phase
+-------------      --------------
 
 </div>
 
-<script>
-
-$( document ).ready(function() {
-	$( "#accordion" ).accordion({
-	heightStyle: "content",
-	collapsible: true
-	});
-});
-</script>
-
-<style>
-.ui-widget-content a {
-    color: #00F;
-	}
-</style>

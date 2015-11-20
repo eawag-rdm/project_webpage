@@ -114,15 +114,45 @@
   .server { color:#7799bb; }
   .error { color:#AA0000; }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script>
+  
+  $( document ).ready(function() {
+  	$( "#accordion" ).accordion({
+  	heightStyle: "content",
+  	collapsible: true
+  	});
+  });
+  </script>
+  
+  <style>
+  .ui-widget-content a {
+      color: #00F;
+  	}
+  .nav a {
+  background-color: blue;
+  color: white;
+  padding: 4px;
+  line-height: 2em;
+  }
+  
+  h4 {
+  text-decoration:underline;
+  }
+  
+  </style>
 </head>
 <body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<h1 id="eawag-research-data-management-project">Eawag Research Data Management Project</h1>
-<h2 id="summary">Summary</h2>
+<h2 id="eawag-research-data-management-project">Eawag Research Data Management Project</h2>
+<p><img src="./eawag_rdm.png" width="100%" /></p>
 <div id="accordion">
-<h2 id="objectives">Objectives</h2>
+<h3 id="summary">Summary</h3>
+<div>
+<p>A central research data repository is being established at Eawag. It will provide intermediate- and long-term storage for datasets of all research groups. The software will be tailored to the specific needs of the researchers at the work group level and is being developed in close interaction with the users. Besides the repository itself, the project will also provide guidelines, training and ancillary tools and services to support researchrs with their data-management and -handling needs.</p>
+</div>
+<h3 id="objectives">Objectives</h3>
 <div>
 <p><strong>1. Provide better support to the scientists to fulfill their data management duties.</strong></p>
 <ul class="incremental">
@@ -132,7 +162,7 @@
 <p><strong>2. Provide guidance for the robust, person-independent and standards-compliant handling of research data.</strong></p>
 <p><strong>3. Exploit the collateral benefits of a central data-management platform</strong></p>
 </div>
-<h2 id="guiding-principles">Guiding Principles</h2>
+<h3 id="guiding-principles">Guiding Principles</h3>
 <div>
 <ul class="incremental">
 <li><strong>For the scientists, data-management should be a well-defined, simple and quickly executed routine task.</strong></li>
@@ -142,10 +172,12 @@
 <li>Strive for collaboration with related inititives within the ETH domain and at other research institutions.</li>
 </ul>
 </div>
-<h2 id="deliverables">Deliverables</h2>
+<h3 id="deliverables">Deliverables</h3>
 <div>
-<p><a href="#eawag-research-data-platform">[Eawag Research Data Platform]</a> <a href="#metadata-schemes">[Metadata Schemes]</a> <a href="#research-data-management-guidelines">[RDM Guidelines]</a> <a href="#support-activities">[Support Activities]</a></p>
-<h3 id="eawag-research-data-platform-erdp">Eawag Research Data Platform (ERDP) <a href="#deliverables">↑</a></h3>
+<p class="nav">
+<a href="#eawag-research-data-platform">Eawag Research Data Platform</a> <a href="#metadata-schemes">Metadata Schemes</a> <a href="#research-data-management-guidelines">RDM Guidelines</a> <a href="#support-activities">Support Activities</a>
+</p>
+<h4 id="eawag-research-data-platform-erdp">Eawag Research Data Platform (ERDP) <a href="#deliverables">↑</a></h4>
 <p>The project will establish an institution-wide central research data repository. The repository will be accessible to all Eawag research groups to</p>
 <ol class="incremental" style="list-style-type: decimal">
 <li>store and maintain their own datasets, to</li>
@@ -163,49 +195,59 @@
 <li>ERDP will act as staging area for submitting datasets to other repositories and for registering a Digital Object Identifier (DOI).</li>
 </ul>
 <p>[A link to more technical information to be provided later on GitHub]</p>
-<h3 id="metadata-schemes">Metadata Schemes <a href="#deliverables">↑</a></h3>
+<h4 id="metadata-schemes">Metadata Schemes <a href="#deliverables">↑</a></h4>
 <p>Development of a metadata structure that is</p>
 <ul class="incremental">
-<li>compatible with international standards, such as the <a href="https://de.wikipedia.org/wiki/Dublin_Core">Dublin Core</a> conventions,</li>
+<li>compatible, to the deggree possible, with international standards, such as the <a href="https://de.wikipedia.org/wiki/Dublin_Core">Dublin Core</a>, <a href="http://www.w3.org/standards/techs/rdf">RDF</a> and <a href="http://www.w3.org/TR/vocab-dcat/">DCAT</a>.</li>
 <li>covers the requirements for all data stored at Eawag,</li>
 <li>will be extended as needed, and</li>
 <li>is compliant to the extent possible with common requirements of external services, such as <a href="https://www.datacite.org/">dataCite</a>, <a href="http://www.pangaea.de/">PANGAEA</a>, or <a href="http://figshare.com">figshare</a>.</li>
 </ul>
-<h3 id="research-data-management-guidelines">Research Data Management Guidelines <a href="#deliverables">↑</a></h3>
+<h4 id="research-data-management-guidelines">Research Data Management Guidelines <a href="#deliverables">↑</a></h4>
 <p>The repository roll-out will be accompanied by the development of data-management guidelines. These guidelines will be developed with user-input in an interative fashion and compliance will be supported by the actual software implementation. The content of the guidelines presumably specifies the precise meta-data requirements, the types of datasets that should be submitted to the repository, rules for write-access to the repository and similar topics.</p>
-<h3 id="support-activities">Support activities <a href="#deliverables">↑</a></h3>
+<h4 id="support-activities">Support activities <a href="#deliverables">↑</a></h4>
 <p>Research groups will receive support to streamline their data submission procedures. This includes case-by-case analysis of current workflow and requirements, support with structuring, formatting, annotation, uploading, searching and downloading, the provision of software to automate such tasks, if applicable, and the cooperative development of specific meta-data schemes.</p>
 </div>
-<h2 id="background">Background</h2>
+<h3 id="background">Background</h3>
 <div>
 <p>The <a href="http://www.eawag.ch/fileadmin/Domain1/About/Arbeiten/Forschungsumfeld/integritaet_forschung.pdf">Eawag Guidelines for Good Scientific Practice</a> assigns to a research project’s PI the responsibility for data management. In particular that includes ensuring the data’s safe (person-independent) storage and accessibility for a prolonged time period, coming up with a suitable set of metadata and the respective annotation of datasets, care against misuse of data by temporary or external collaborators, and transfer of their own knowledge and data if they leave Eawag.</p>
 <p>In practice, secure storage and retrievability handled individually in each workgroup is riddled with difficulties. Fluctuating scientific staff, diverse storage locations, ad-hoc or missing meta-data schemes are among the reasons for sub-optimal storage of often irreplaceable and non-reproducible datasets that were produced at substantial cost.</p>
 <p>In general, individually carried out proper mid- and long-term storage and archival of research data requires an undue amount of effort, time and know-how outside their respective research area from the scientist in charge, whose time would be much better spent for doing research.</p>
 <p>Therefore, the natural strategy is the establishment of a professionally managed central data repository. This goes hand in hand with the establishment of data-management procedures that can be followed “blindly”.</p>
 </div>
-<h2 id="people">People</h2>
+<h3 id="people">People</h3>
 <div>
 Project lead: <a href="http://www.eawag.ch/de/ueberuns/portraet/organisation/mitarbeitende/profile/harald-von-waldow/">Harald von Waldow</a><br />Steering Group: <a href="http://www.eawag.ch/de/ueberuns/portraet/organisation/mitarbeitende/profile/jochen-bihn/">Jochen Bihn</a>, <a href="http://www.eawag.ch/de/ueberuns/portraet/organisation/mitarbeitende/profile/lothar-nunnenmacher/">Lothar Nunnenmacher</a>, <a href="http://www.eawag.ch/de/ueberuns/portraet/organisation/mitarbeitende/profile/gabriel-piepke/">Gabriel Piepke</a>, <a href="http://www.eawag.ch/de/ueberuns/portraet/organisation/mitarbeitende/profile/peter-reichert/">Peter Reichert</a>, <a href="http://www.eawag.ch/de/ueberuns/portraet/organisation/mitarbeitende/profile/raoul-schaffner/">Raoul Schaffner</a>, <a href="http://www.eawag.ch/de/ueberuns/portraet/organisation/mitarbeitende/profile/rosi-siber/">Rosi Siber</a>
 </div>
-<h2 id="co-operation-with-other-projects">Co-operation with other projects</h2>
+<h3 id="co-operation-with-other-projects">Co-operation with other projects</h3>
 <div>
 <p>We aim to connect with related initiatives within the ETH-domain and Swiss universities. Currently we are in contact with WSL. With regard to the software, we are part of the global CKAN developer community.</p>
 </div>
-<h2 id="time-line">Time-line</h2>
+<h3 id="time-line">Time-line</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Jan. 2015?</strong></td>
+<td align="left">Start of Concept Phase.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Sep. 2015</strong></td>
+<td align="left">Basic CKAN customizations begins.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Dec. 2015</strong></td>
+<td align="left">Customization based on “real data” begins.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Mar. 2016</strong></td>
+<td align="left">Start of pilot phase.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Jan. 2017</strong></td>
+<td align="left">Operational phase</td>
+</tr>
+</tbody>
+</table>
 </div>
-<script>
-
-$( document ).ready(function() {
-    $( "#accordion" ).accordion({
-    heightStyle: "content",
-    collapsible: true
-    });
-});
-</script>
-<style>
-.ui-widget-content a {
-    color: #00F;
-    }
-</style>
 </body>
 </html>
